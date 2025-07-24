@@ -194,46 +194,131 @@
     </style>
 
     <!-- Latest Deals Section -->
-    <section class="relative w-full max-w-[1440px] mx-auto my-4">
-      <h1
-        class="h-[68px] flex justify-center items-center gap-4 p-0
-               font-[Noto_Serif] text-[50px] font-bold leading-[68px] tracking-normal text-center"
-      >
-        <span class="text-orange-400">Latest</span>
-        <span> Deals</span>
-      </h1>
+<section class="relative w-full max-w-[1440px] mx-auto my-4">
+  <!-- Section Title -->
+  <h1 class="h-[68px] flex justify-center items-center gap-4 font-[Noto_Serif] text-[50px] font-bold leading-[68px] text-center">
+    <span class="text-orange-400">Latest</span><span> Deals</span>
+  </h1>
 
-      <p
-        class="w-[888px] mx-auto h-[54px] flex justify-center items-center gap-4 p-0
-               text-black/50 font-[Inter] text-[22px] font-normal leading-[27px] tracking-normal text-center my-4"
-      >
-        Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
-      </p>
+  <!-- Description -->
+  <p class="w-[888px] mx-auto text-black/50 font-[Inter] text-[22px] leading-[27px] text-center my-4">
+    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+  </p>
 
-      <div
-        class="w-[1140px] mx-auto h-[423px] flex justify-center items-center gap-7 p-0"
-      >
-        <img
-          src="assets/deal-bloom.png"
-          alt="Deal Bloom"
-          class="w-[366.22px] h-[206px]"
-          style="background: rgba(0, 0, 0, 0.4); background-image: url('assets/deal-bloom.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
-        />
-
-        <img
-          src="assets/deal-ana.png"
-          alt="Deal Ana"
-          class="w-[402px] h-[268px]"
-          style="background: rgba(0, 0, 0, 0.4); background-image: url('assets/deal-ana.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
-        />
-
-        <img
-          src="assets/deal-zabo.png"
-          alt="Deal Zabo"
-          class="w-[753px] h-[423.13px] mx-[10px] flex-none order-0"
-          style="background: rgba(0, 0, 0, 0.4); background-image: url('assets/deal-zabo.png'); background-repeat: no-repeat; background-position: center; background-size: cover;"
-        />
+  <!-- Image Grid with equal height and ≤10px gap -->
+  <div class="w-[1140px] mx-auto grid grid-cols-2 gap-[10px]">
+    <!-- Left Column: Two stacked images -->
+    <div class="flex flex-col gap-[10px]">
+      <!-- Bloom Image -->
+      <div class="relative w-full h-[206px] bg-cover bg-center" style="background-image: url('assets/deal-bloom.png');">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10">
+          <p>60% Off | Bloom Plant</p>
+          <a href="#" class="underline">Shop Now</a>
+        </div>
       </div>
-    </section>
+
+      <!-- Ana Image -->
+      <div class="relative w-full h-[206px] bg-cover bg-center" style="background-image: url('assets/deal-ana.png');">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10">
+          <p>30% Off | Ana Plant</p>
+          <a href="#" class="underline">Shop Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: One tall image -->
+    <div class="relative w-full h-[423px] bg-cover bg-center" style="background-image: url('assets/deal-zabo.png');">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10">
+        <p>25% Off | Zabo Plant</p>
+        <a href="#" class="underline">Shop Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="relative w-[1440px] h-[533px] mx-auto overflow-hidden">
+  <!-- Background image with overlay -->
+  <div
+    class="absolute top-0 left-0 w-full h-full bg-[rgba(7,51,79,0.4)] bg-blend-overlay bg-cover bg-center"
+    style="background-image: url('assets/news-letter-bg.png');"
+  ></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-full px-4 text-white space-y-8">
+    <!-- Heading -->
+    <p class="text-[50px] font-bold leading-[68px] text-center font-['Noto_Serif'] w-[586px]">
+      Join the colorful Bunch
+    </p>
+
+    <!-- Email Form -->
+    <form class="flex flex-row items-center justify-start gap-[10px] px-[20px] py-[8px] w-[644px] h-[50px] bg-white rounded-md">
+      <input
+        type="email"
+        placeholder="Write your email"
+        class="flex-1 h-full px-4 py-2 text-black rounded-md"
+        required
+      />
+      <button
+        type="submit"
+        class="h-full px-6 py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600 transition"
+      >
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+<footer class="max-w-[1120px] mx-auto my-12 flex justify-between items-start px-0">
+  <!-- Logo and Description -->
+  <div class="flex flex-col gap-4 w-[359px]">
+    <img 
+      src="assets/logo.png" 
+      alt="Logo" 
+      class="w-[135px] h-[82px] mt-4 mb-4"
+    />
+    <p class="text-black/50 font-inter text-[22px] font-normal leading-[27px] text-left">
+      Indulge your senses with the beauty and fragrance of our fresh flower shop.
+    </p>
+  </div>
+
+  <!-- Home to Contact Us Column -->
+  <div class="flex flex-col justify-start items-start gap-8 w-[85px] mx-2.5">
+    <ul class="space-y-8 list-none p-0 m-0">
+      <li class="cursor-pointer font-inter text-base text-black">Home</li>
+      <li class="cursor-pointer font-inter text-base text-black">About US</li>
+      <li class="cursor-pointer font-inter text-base text-black">Blog</li>
+      <li class="cursor-pointer font-inter text-base text-black">FAQ</li>
+      <li class="cursor-pointer font-inter text-base text-black">Contact US</li>
+    </ul>
+  </div>
+
+  <!-- Features to Help Column -->
+  <div class="flex flex-col justify-start items-start gap-8 w-[128px] mx-2.5">
+    <ul class="space-y-8 list-none p-0 m-0">
+      <li class="cursor-pointer font-inter text-base text-black">Features</li>
+      <li class="cursor-pointer font-inter text-base text-black">Pricing</li>
+      <li class="cursor-pointer font-inter text-base text-black">Privacy Policy</li>
+      <li class="cursor-pointer font-inter text-base text-black">Terms of Services</li>
+      <li class="cursor-pointer font-inter text-base text-black">Help center</li>
+    </ul>
+  </div>
+
+  <!-- Social Icons -->
+  <nav class="flex items-center gap-4 mt-4">
+    <img src="assets/icon-linkedin.png" alt="LinkedIn" class="w-6 h-6 cursor-pointer" />
+    <img src="assets/icon-twitter.png" alt="Twitter" class="w-6 h-6 cursor-pointer" />
+    <img src="assets/icon-facebook.png" alt="Facebook" class="w-6 h-6 cursor-pointer" />
+    <img src="assets/icon-youtube.png" alt="YouTube" class="w-6 h-6 cursor-pointer" />
+  </nav>
+</footer>
+
+
+
+
+
+
+
+
   </body>
 </html>
