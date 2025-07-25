@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <title>Fresh Flowers</title>
+  </head>
+
+  <body class="bg-[#F5F8FF] text-black">
+    <!--top section-->
+    <header
+      class="w-full px-4 sm:px-6 md:px-[150px] py-4 flex justify-between items-center"
+    >
+      <!-- logo -->
+      <img src="assets/logo.png" class="h-10 sm:h-12" />
+
+      <!--for desktop-->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6 text-lg font-medium">
+          <li><a href="#" class="hover:text-blue-500 text-black">Home</a></li>
+          <li>
+            <a href="#" class="hover:text-blue-500 text-gray-500">Shop</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-500 text-gray-500">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-500 text-black">
+              Cart ($56) <i class="fas fa-cart-shopping ml-1"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--cart wih ion) -->
+      <div class="md:hidden">
+        <a href="#" class="text-black text-lg font-medium flex items-center">
+          Cart <i class="fas fa-cart-shopping ml-2 text-xl"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- hero flower -->
+    <section class="w-full px-4 sm:px-6 md:px-[150px] py-20 bg-[#F5F8FF]">
+      <div
+        class="max-w-[1140px] mx-auto flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <!-- mobile top view) -->
+        <div class="order-1 md:order-2 w-full md:w-1/2 flex justify-center">
+          <img src="assets/hero-flower.png" class="w-full max-w-md" />
+        </div>
+
+        <!-- text then) -->
+        <div class="order-2 md:order-1 w-full md:w-1/2 max-w-xl">
+          <h1
+            class="text-[36px] sm:text-[44px] md:text-[50px] font-bold leading-tight text-center md:text-left"
+          >
+            Always <span class="text-orange-400">Fresh Flowers</span>
+          </h1>
+          <p
+            class="mt-6 text-[18px] sm:text-[20px] md:text-[22px] leading-[30px] sm:leading-[32px] text-center md:text-left text-black/60"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--our text -->
+    <section class="w-full px-10 py-16 bg-white">
+      <div class="text-center mb-12">
+        <h2 class="text-5xl font-bold mb-4">
+          <span class="text-orange-400">Our</span> Plants
+        </h2>
+        <p class="text-lg text-black/60 max-w-2xl mx-auto">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+
+      <div
+        class="grid gap-6 max-w-6xl mx-auto grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
+      >
+        <!-- all carts -->
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Lily Blossom
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            20 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Rose
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            25 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Orchid
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            30 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Sunflower
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            15 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Tulip
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            22 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Daisy
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            18 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <!--others-->
+        <div class="hidden sm:flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Lavender
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            28 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+
+        <div class="hidden sm:flex flex-col bg-white rounded-xl shadow p-4">
+          <img
+            src="assets/sample-flower-image.png"
+            class="w-full h-64 object-cover rounded-xl mb-4"
+          />
+          <h3
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-medium leading-[150%] mb-1"
+          >
+            Jasmine
+          </h3>
+          <h4
+            class="text-[rgb(17,17,17)] font-inter text-[22px] font-bold leading-[150%] mb-4"
+          >
+            24 USD
+          </h4>
+          <button
+            class="flex items-center justify-center gap-[10px] px-[50px] py-[12px] text-white font-inter text-[16px] font-semibold leading-[19px] bg-orange-400 rounded-md hover:bg-orange-500 transition"
+          >
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--lover -->
+    <section
+      class="max-w-[1140px] mx-auto my-16 flex flex-col md:flex-row items-center gap-10 px-6"
+    >
+      <!-- image container -->
+      <div
+        class="relative flex-none rounded-xl overflow-hidden"
+        style="
+          width: 100%;
+          max-width: 540px;
+          height: 597px;
+          background: linear-gradient(
+              180deg,
+              rgba(103, 171, 234, 0.24),
+              rgba(233, 90, 8, 0.6) 100%
+            ),
+            url('assets/flower-store.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      >
+        <!-- Trusted badge -->
+        <img
+          src="assets/trusted-badge.png"
+          alt="Trusted Badge"
+          class="absolute top-4 right-4 h-[150px] w-[150px] hidden md:block animate-spin-slow"
+          style="transform-origin: center"
+        />
+      </div>
+
+      <!-- text content -->
+      <div class="flex flex-col justify-center items-start gap-5 max-w-[540px]">
+        <h1
+          class="text-black font-[Noto_Serif] text-[50px] font-bold leading-[68px] tracking-normal text-left"
+        >
+          Flower &amp; Plants Lover
+        </h1>
+
+        <p class="mb-2 text-gray-700 max-w-[500px]">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+        <p class="mb-2 text-gray-700 max-w-[500px]">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+        <p class="mb-2 text-gray-700 max-w-[500px]">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+      </div>
+    </section>
+
+    <style>
+      @keyframes spin-slow {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 4s linear infinite;
+      }
+    </style>
+
+    <!-- Deals-->
+    <section class="relative w-full max-w-[1440px] mx-auto my-4 px-4 sm:px-6">
+      <!-- Title -->
+      <h1
+        class="h-[68px] flex justify-center items-center gap-4 font-[Noto_Serif] text-[50px] font-bold leading-[68px] text-center"
+      >
+        <span class="text-orange-400">Latest</span><span> Deals</span>
+      </h1>
+
+      <p
+        class="w-full max-w-[888px] mx-auto text-black/50 font-[Inter] text-[22px] leading-[27px] text-center my-4"
+      >
+        Indulge your senses with the beauty and fragrance of our fresh flower
+        shop. From classic roses to exotic blooms, we offer a wide variety of
+        fresh.
+      </p>
+
+      <!-- Grid -->
+      <div
+        class="w-full max-w-[1140px] mx-auto grid gap-[10px] grid-cols-1 sm:grid-cols-2"
+      >
+        <div class="flex flex-col gap-[10px] order-1">
+          <div
+            class="relative w-full h-[206px] bg-cover bg-center"
+            style="background-image: url('assets/deal-bloom.png')"
+          >
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10"
+            >
+              <p>60% Off | Bloom Plant</p>
+              <a href="#" class="underline">Shop Now</a>
+            </div>
+          </div>
+
+          <div
+            class="relative w-full h-[206px] bg-cover bg-center"
+            style="background-image: url('assets/deal-ana.png')"
+          >
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10"
+            >
+              <p>30% Off | Ana Plant</p>
+              <a href="#" class="underline">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative w-full h-[423px] bg-cover bg-center order-2 sm:order-2"
+          style="background-image: url('assets/deal-zabo.png')"
+        >
+          <div class="absolute inset-0 bg-black/40"></div>
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-white font-[Noto_Serif] font-bold text-[20px] text-center z-10"
+          >
+            <p>25% Off | Zabo Plant</p>
+            <a href="#" class="underline">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative w-full max-w-[1440px] h-auto sm:h-[533px] mx-auto overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-[rgba(7,51,79,0.4)] bg-blend-overlay bg-cover bg-center"
+        style="background-image: url('assets/news-letter-bg.png')"
+      ></div>
+
+      <div
+        class="relative z-10 flex flex-col items-center justify-center h-full px-4 py-12 text-white space-y-8 max-w-[700px] mx-auto"
+      >
+        <p
+          class="text-4xl sm:text-[50px] font-bold leading-snug sm:leading-[68px] text-center font-['Noto_Serif'] max-w-full"
+        >
+          Join the colorful Bunch
+        </p>
+
+        <form
+          class="flex flex-col sm:flex-row items-center justify-start gap-4 px-4 py-3 w-full sm:w-[644px] bg-white rounded-md"
+        >
+          <input
+            type="email"
+            placeholder="Write your email"
+            class="flex-1 h-12 px-4 py-2 text-black rounded-md"
+            required
+          />
+          <button
+            type="submit"
+            class="w-full sm:w-auto h-12 px-6 py-2 bg-orange-500 text-white font-semibold rounded-md hover:bg-orange-600 transition"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="max-w-[1120px] mx-auto my-12 px-4 flex flex-col md:flex-row md:justify-between md:items-start gap-8"
+    >
+      <div class="flex flex-col gap-4 w-full md:w-[359px]">
+        <img src="assets/logo.png" class="w-[135px] h-[82px] mt-4 mb-4" />
+        <p
+          class="text-black/50 font-inter text-[22px] font-normal leading-[27px] text-left"
+        >
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:gap-12 w-full">
+        <div
+          class="flex flex-col justify-start items-start gap-8 w-full md:w-[85px] mx-0 md:mx-2.5"
+        >
+          <ul class="space-y-8 list-none p-0 m-0">
+            <li class="cursor-pointer font-inter text-base text-black">Home</li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              About US
+            </li>
+            <li class="cursor-pointer font-inter text-base text-black">Blog</li>
+            <li class="cursor-pointer font-inter text-base text-black">FAQ</li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              Contact US
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col justify-start items-start gap-8 w-full md:w-[128px] mx-0 md:mx-2.5"
+        >
+          <ul class="space-y-8 list-none p-0 m-0">
+            <li class="cursor-pointer font-inter text-base text-black">
+              Features
+            </li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              Pricing
+            </li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              Privacy Policy
+            </li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              Terms of Services
+            </li>
+            <li class="cursor-pointer font-inter text-base text-black">
+              Help center
+            </li>
+          </ul>
+        </div>
+
+        <nav
+          class="flex justify-start md:flex-col md:justify-start gap-4 mt-6 md:mt-4 w-full md:w-auto"
+        >
+          <img src="assets/icon-linkedin.png" class="w-6 h-6 cursor-pointer" />
+          <img src="assets/icon-twitter.png" class="w-6 h-6 cursor-pointer" />
+          <img src="assets/icon-facebook.png" class="w-6 h-6 cursor-pointer" />
+          <img src="assets/icon-youtube.png" class="w-6 h-6 cursor-pointer" />
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
